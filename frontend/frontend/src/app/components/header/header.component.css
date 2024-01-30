@@ -1,0 +1,75 @@
+.logo {
+    position: relative;
+    top: 3px;
+    height: 100px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.header-title {
+    position: relative;
+    top: 45px;
+    left: 300px;
+    font-family:
+     'Brush Script MT', cursive;
+    /* 'Times New Roman', Times, serif, serif; */
+    /* 'Montserrat', cursive; */
+    /* font-style: italic; */
+    font-size: 75px;
+    color:  #101820FF;
+    text-align:justify;
+}
+
+button{
+    color:#101820FF;
+}
+
+.btnMain {
+    font-size: 20px;
+    /* background: white url(C:\group6\foodbox\finalfoodbox\src\assets\images/admin.jfif) right no-repeat;
+    padding: 10% */
+}
+
+.btnMain:hover {
+    color: #bf1e2e;
+}
+
+.modal-footer button {
+    background-color: #bf1e2e;
+    color: rgb(247, 240, 240);
+}
+
+th {
+    color: #bf1e2e;
+}
+
+.navbar {
+    background-color: #F2AA4CFF;
+}
+:mat-simple-snackbar{
+    background-color: #bf1e2e !important;
+}
+:mat-snack-bar-containe{
+    background-color: #bf1e2e !important;
+}
+:p .success-message {
+    color: green;
+    font-weight: bold;
+  }
+
+.message{
+    background-color: #bf1e2e !important;
+  }
+/* :p .message{
+
+} */
+
+.wellcome{
+    background-color: pink;
+    text-align: center;
+    color: yellow;
+    /* padding-left: 30px;
+    */
+    margin-left: 10%;
+    font-size: 40px;
+}

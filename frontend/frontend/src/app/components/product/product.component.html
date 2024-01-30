@@ -1,0 +1,69 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="form-group col-md-5">
+            <input type="text" class="form-control" name="searchKey" [(ngModel)]="searchKey" (ngModelChange)="Search()" placeholder="Search Product" />
+        </div>
+        <div class="container d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light col-md-7">
+                <div class="navSec">
+                    <a (click)="getProducts()" id="allProducts" class="navbar-brand">All Products</a
+          >
+        </div>
+        <div class="navSec">
+          <a (click)="categoryVeg()" id="Veg" class="navbar-brand">Veg</a>
+                </div>
+
+                <div class="navSec">
+                    <a (click)="categoryNonVeg()" id="NonVeg" class="navbar-brand">Non_veg</a
+          >
+        </div>
+        <div class="navSec">
+          <a (click)="categoryDessert()" id="Dessert" class="navbar-brand"
+            >Dessert</a
+          >
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="bg">
+  <div class="container">
+    <div class="row">
+      <ng-container *ngFor="let item of products">
+        <div class="card col-md-3 flex-column d-flex">
+          <img src="{{ item.imagepath }}" alt="" />
+          <h2>{{ item.name }}</h2>
+          <p>{{ item.desc }}</p>
+          <p>
+            <strong>Price: </strong>₹{{ item.actualPrice }}
+            <span *ngIf="item.discount > 0" style="color: red"
+              >({{ item.discount }}% Discount)</span
+            >
+          </p>
+          <div *ngIf="item.discount > 0">
+            <p><strong>After Discount Price: </strong>₹{{ item.price }}</p>
+          </div>
+          <div *ngIf="item.discount == 0">
+            <p></p>
+            <br />
+          </div>
+          <button
+            *ngIf="login == 0"
+            class="align-self-end mt-auto btn addcart btn-primary"
+            (click)="showToLogin()"
+          >
+            Add to Cart
+          </button>
+          <button
+            *ngIf="login == 1"
+            class="align-self-end mt-auto btn addcart btn-primary"
+            (click)="addToCart(item)"
+            id="addToCart"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

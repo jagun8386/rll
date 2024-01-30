@@ -1,0 +1,26 @@
+.bg {
+    /* The image used */
+    background-image: url("/assets/images/13.jpg");
+    /* Full height */
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+h1 {
+    font-style: bold;
+    color: aliceblue;
+}
+
+.fg {
+    color: antiquewhite;
+}

@@ -1,0 +1,18 @@
+<div class="bg mt-5 p-2">
+    <div class="col-md-3 offset-md-4 shadow-lg mt-2 p-5 text-primary text-center" style="background-color: transparent; border-radius: 35px">
+        <!-- <h1><span>Welcome to Admin Login !</span></h1> -->
+        <h1><strong>Welcome to Admin Login </strong></h1>
+        <form (ngSubmit)="loginSubmit()">
+            <h5 *ngIf="error != ''" style="color: aliceblue">
+                {{ error }}
+            </h5>
+
+            <h2 class="text-center text-lg">Username</h2>
+            <input [(ngModel)]="loginData.username" name="username" type="username" id="defaultForm-username m-3" class="form-control validate" /><br />
+            <h2 class="text-center">Password</h2>
+            <input [(ngModel)]="loginData.password" name="password" type="password" id="defaultForm-pass" class="form-control validate" /><br />
+            <button type="submit" class="btn btn-info mx-3">Login</button>
+            <!-- <a class="fg" href="#" routerLink="/products">Forgot Password?</a> -->
+        </form>
+    </div>
+</div>

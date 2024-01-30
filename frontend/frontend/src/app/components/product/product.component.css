@@ -1,0 +1,79 @@
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: green(255, 255, 255);
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    padding: 20px;
+    margin: 15px auto;
+}
+
+.navSec a:hover {
+    color: #bf1e2e;
+    cursor: pointer;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.form-control {
+    border-radius: 3px;
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.carousel-item {
+    height: 300px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form-control {
+    background: white url("/assets/images/link.png") right center no-repeat
+}
+
+
+/* .addcart{
+    position: absolute;
+    bottom: 5px;
+    display: table;
+} */
+
+.bg {
+    /* The image used */
+    background-image: url("/assets/images/8.jpg");
+    /* Full height */
+    height: 210vh;
+    margin: 0;
+    padding: 0;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: rgba(216, 112, 112, 0.205);
+}

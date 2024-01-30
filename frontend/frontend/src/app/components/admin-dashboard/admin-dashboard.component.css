@@ -1,0 +1,76 @@
+.logo {
+    position: relative;
+    top:2px;
+    height: 80px;
+    width: 105px;
+    cursor: pointer;
+}
+
+.header-title {
+    position: relative;
+    top: 20px;
+    left: 300px;
+    font-family:
+     'Brush Script MT', cursive;
+    /* 'Times New Roman', Times, serif, serif; */
+    /* 'Montserrat', cursive; */
+    /* font-style: italic; */
+    font-size: 75px;
+    color:  #101820FF;
+    text-align:justify;
+}
+.navbar {
+    background-color: #F2AA4CFF;
+}
+button{
+    color:#101820FF;
+}
+.body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: red;
+}
+
+.bthHead {
+    margin-left: 10px;
+}
+
+.active,
+.bthHead:hover {
+    color: #ee1111;
+}
+
+hr {
+    margin: 0;
+}
+
+.prodLogo {
+    position: relative;
+    top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.AddProd {
+    margin: 10px;
+}
+
+.makeCenter {
+    text-align: center;
+}
+
+.form-check-input {
+    margin-top: 3px;
+}
+
+p {
+    color: red;
+}
+
+.modal-title {
+    font-size: 18px;
+}
+
+th {
+    text-align: center;
+}
